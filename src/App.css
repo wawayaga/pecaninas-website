@@ -1,13 +1,12 @@
 #root {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  color: #224dbe;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 8rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -17,26 +16,49 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a::after {
+  content: "|";
+  margin-left: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar a:last-child::after {
+  content: "";
 }
-
+.open-hamburger {
+  background-color: #224dbe;
+}
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*Website colors*/
+
+.cream {
+  background-color: #fefefe;
+}
+
+.blue {
+  background-color: #224dbe;
+}
+
+.peach {
+  background-color: #e8843a;
+}
+/* Fonts*/
+
+@font-face {
+  font-family: "carlito-bold";
+  src: url(./assets/fonts/Carlito-Bold.ttf) format("opentype");
+}
+
+.carlito-bold {
+  font-family: "carlito-bold";
+  color: #224dbe;
 }
