@@ -1,11 +1,13 @@
 export default function Logo() {
   return (
-    <a href="" target="_blank">
-      <img
-        src="../../public/LogoOnly-transp.png"
-        className="logo"
-        alt="Pecanina"
-      />
-    </a>
+    <div className="p-4">
+      <a href="/" target="_blank">
+        <img
+          src="../../public/Logo-chico.jpg"
+          className="logo"
+          alt="Pecanina"
+        />
+      </a>
+    </div>
   );
 }

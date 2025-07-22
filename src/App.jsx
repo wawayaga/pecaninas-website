@@ -2,14 +2,15 @@ import './App.css'
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import PayPalButton from "./components/PayPalButton";
 import Header from "./components/Header";
-import "./App.css";
+import Router from "./components/Router";
 
 function App() {
   return (
      <>
       <Header />
-      <div></div>
-    
+      <div>
+        <Router />
+      </div>
     <PayPalScriptProvider
       options={{
         "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,

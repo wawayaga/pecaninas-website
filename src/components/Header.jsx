@@ -1,24 +1,26 @@
 import Logo from "./Logo";
 import HamburgerComponent from "./Hamburger";
+import { Link } from "wouter";
 
 export default function Header() {
   return (
-    <header className="bg-white">
-      <nav className="flex items-center justify-between">
-        <div>
-          <Logo />
-        </div>
-        <div>
-          <HamburgerComponent />
-        </div>
-        <div className="navbar carlito-bold text-lg items-center gap-4 invisible md:visible md:flex pr-10">
-          <a href="">Services</a>
-          <a href="">Booking</a>
-          <a href="">About me</a>
-          <a href="">Testimonials</a>
-          <a href="">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <div>
+      {/*Desktop-header */}
+      <header className="desktop-header flex bg-white justify-between items-center">
+        <Logo />
+        <nav className="navbar carlito-bold text-lg items-center gap-4 md:flex pr-10">
+          <Link href="/Services">Services</Link>
+          <Link href="/Booking">Booking</Link>
+          <Link href="/About-me">About me</Link>
+          <Link href="/Testimonials">Testimonials</Link>
+          <Link href="/Contact">Contact</Link>
+        </nav>
+      </header>
+      {/*Mobile header*/}
+      <header className="md:hidden bg-white justify-between flex items-center">
+        <Logo />
+        <HamburgerComponent />
+      </header>
+    </div>
   );
 }
