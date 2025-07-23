@@ -6,7 +6,7 @@
 }
 
 .logo {
-  height: 8rem;
+  height: 6rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -16,6 +16,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
 .navbar a::after {
   content: "|";
   margin-left: 8px;
@@ -25,6 +26,8 @@
 }
 .open-hamburger {
   background-color: #224dbe;
+  font-family: "carlito-bold";
+  color: #fefefe;
 }
 .card {
   padding: 2em;
@@ -34,8 +37,10 @@
   color: #888;
 }
 
-.hidden {
-  visibility: hidden;
+@media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
 }
 
 /*Website colors*/
