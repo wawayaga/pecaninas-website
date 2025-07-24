@@ -1,8 +1,7 @@
 import './App.css'
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-import PayPalButton from "./components/PayPalButton";
 import Header from "./components/Header";
 import Router from "./components/Router";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,18 +9,10 @@ function App() {
       <Header />
       <div>
         <Router />
+        <Footer />
       </div>
-    <PayPalScriptProvider
-      options={{
-        "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,
-        currency: "USD",
-      }}
-    >
-      <div className="App">
-        <h1>Test PayPal Payment</h1>
-        <PayPalButton />
-      </div>
-    </PayPalScriptProvider>
+      
+
     </>
   );
 }
