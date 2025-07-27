@@ -11,7 +11,7 @@ export default function Home() {
   const heroDescription =
     "Lorem ipsum dolor sit amet. Qui rerum eveniet vel rerum inventore sed consequatur corrupti non labore voluptatum.";
 
-  const heroButtons = ["BOOK", "SERVICES"];
+  const heroButtons = ["Services", "Contact"];
 
   const heroImage = "/Home hero 4 a 5.jpg";
 

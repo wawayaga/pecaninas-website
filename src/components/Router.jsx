@@ -14,7 +14,6 @@ export default function Router() {
       <Route path="/" component={Home} />
       <Route path="/Services" component={Services} />
       <Route path="/Booking" component={Booking} />
-      <Route path="/Services" component={Services} />
       <Route path="/About-me" component={AboutMe} />
       <Route path="/Not-found" component={NotFound} />
       {/*

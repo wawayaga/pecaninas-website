@@ -8,7 +8,7 @@ export default function HamburgerComponent() {
     <div className="md:invisible">
       <Hamburger color="#224dbe" size={30} toggled={open} toggle={setOpen} />
       {open && (
-        <div className="fixed absolute top-0 left-0 w-screen h-screen text-black bg-white">
+        <div className="z-40 fixed absolute top-0 left-0 w-screen h-screen text-black bg-white">
           <header className="flex w-full items-center justify-end">
             <Hamburger size={30} toggled={open} toggle={setOpen} />
           </header>

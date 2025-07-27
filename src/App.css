@@ -37,7 +37,7 @@
   color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .desktop-header {
     display: none;
   }

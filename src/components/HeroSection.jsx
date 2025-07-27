@@ -1,35 +1,32 @@
 const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
   return (
-    <section className="bg-[#F6F6F6] pb-8 sm:pb-10">
-      <div className="container max-w-screen-xl flex flex-col lg:flex-row items-center gap-6">
-        {/* IMAGE LEFT */}
-        <div className="w-full lg:w-1/3">
+    <section className="bg-[#F6F6F6] pb-6 xl:pb-10">
+      <div className="grid grid-rows-2 md:grid-cols-3 md:grid-rows-1 flex lg:flex-row flex-col">
+        <div className="">
           <img
             src={heroImage}
             alt={alt}
-            className="w-full opacity-75 h-auto shadow-md object-contain"
+            className="opacity-75 shadow-md object-contain"
           />
         </div>
-
-        {/* TEXT RIGHT */}
-        <div className="w-full lg:w-1/2 px-2">
-          <div className="mb-5">
-            <h1 className="text-2xl text-center xl:text-left sm:text-3xl md:text-4xl font-bold text-[#E8843A] mb-4">
-              {title}
-            </h1>
-            <p className="text-sm text-left lg:text-right sm:text-base text-[#E8843A] max-w-md lg:mt-8 lg:ms-10">
+        <div className="grid grid-rows-2 md:col-span-2 p-5 md:p-10">
+          <h1 className="md:content-end content-center text-4xl lg:3xl lg:px-10 lg:pt-10 text-2xl text-left sm:text-3xl md:text-4xl font-bold text-[#E8843A] md:mb-4">
+            {title}
+          </h1>
+          <div className="xl:px-[10px] lg:ms-10 content-center">
+            <p className="text-sm text-left xl:text-right sm:text-base text-[#E8843A] mb-5">
               {description}
             </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            {buttons.map((btnText, index) => (
-              <button
-                key={index}
-                className="bg-[#1D3E8A] hover:bg-[#17316e] text-white font-semibold px-6 py-2 rounded-full"
-              >
-                {btnText}
-              </button>
-            ))}
+            <div className="flex flex-row gap-4 content-center justify-end">
+              {buttons.map((btnText, index) => (
+                <button
+                  key={index}
+                  className="bg-[#224DBE] hover:bg-[#1464F6] w-1/2 md:w-1/4 text-white font-semibold px-6 py-2 rounded-full"
+                >
+                  {btnText}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
