@@ -13,6 +13,8 @@ export default function Home() {
 
   const heroButtons = ["BOOK", "SERVICES"];
 
+  const heroImage = "/Home hero 4 a 5.jpg";
+
   return (
     <div>
       <main>
@@ -20,6 +22,8 @@ export default function Home() {
           title={heroTitle}
           description={heroDescription}
           buttons={heroButtons}
+          heroImage={heroImage}
+          alt="Dogs paw touching human hand"
         />
         {/* Other content */}
       </main>
