@@ -53,6 +53,10 @@
   background-color: #224dbe;
 }
 
+.text-blue {
+  color: #224dbe;
+}
+
 .peach {
   background-color: #e8843a;
 }
@@ -65,5 +69,4 @@
 
 .carlito-bold {
   font-family: "carlito-bold";
-  color: #224dbe;
 }

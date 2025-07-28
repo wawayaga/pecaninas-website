@@ -14,9 +14,9 @@ export default function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/Services" component={Services} />
-      <Route path="/Booking" component={Booking} />
       <Route path="/About-me" component={AboutMe} />
       <Route path="/Donation" component={Donation} />
+      <Route path="/Booking" component={Booking} />
 
       <Route>
         <NotFound />

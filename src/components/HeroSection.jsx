@@ -21,7 +21,7 @@ const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
               {buttons.map((btnText, index) => (
                 <button
                   key={index}
-                  className="bg-[#224DBE] hover:bg-[#1464F6] w-1/2 md:w-1/4 text-white font-semibold px-6 py-2 rounded-full"
+                  className="bg-[#224DBE] hover:bg-[#1464F6] w-1/2 md:w-1/4 text-white carlito-bold px-6 py-2 rounded-full"
                 >
                   {btnText}
                 </button>

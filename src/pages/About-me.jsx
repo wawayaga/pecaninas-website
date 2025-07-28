@@ -6,15 +6,12 @@ export default function AboutMe() {
 
   return (
     <div>
-      <main>
-        <HeroSectionRight
-          title="About me"
-          description={heroDescription}
-          heroImage="/about me hero 4 a 5.jpg"
-          alt="Training resting with a dog"
-        />
-        {/* Other content */}
-      </main>
+      <HeroSectionRight
+        title="About me"
+        description={heroDescription}
+        heroImage="/about me hero 4 a 5.jpg"
+        alt="Training resting with a dog"
+      />
     </div>
   );
 }

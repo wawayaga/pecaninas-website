@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection.jsx";
 export default function Home() {
   const heroTitle = (
     <>
-      Learn to <span className="text-[#D35B26]">connect</span> with your
+      Learn to connect with your
       <br className="hidden sm:block" /> dog
     </>
   );
@@ -17,16 +17,13 @@ export default function Home() {
 
   return (
     <div>
-      <main>
-        <HeroSection
-          title={heroTitle}
-          description={heroDescription}
-          buttons={heroButtons}
-          heroImage={heroImage}
-          alt="Dogs paw touching human hand"
-        />
-        {/* Other content */}
-      </main>
+      <HeroSection
+        title={heroTitle}
+        description={heroDescription}
+        buttons={heroButtons}
+        heroImage={heroImage}
+        alt="Dogs paw touching human hand"
+      />
     </div>
   );
 }

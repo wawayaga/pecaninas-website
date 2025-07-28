@@ -8,9 +8,8 @@ export default function Header() {
       {/*Desktop-header */}
       <header className="desktop-header flex bg-white justify-between items-center">
         <Logo />
-        <nav className="navbar carlito-bold text-lg items-center gap-4 md:flex pr-10">
+        <nav className="navbar text-blue carlito-bold text-lg items-center gap-4 md:flex pr-10">
           <Link href="/Services">Services</Link>
-          <Link href="/Booking">Booking</Link>
           <Link href="/About-me">About me</Link>
           <Link href="/Donation">Donation</Link>
           <Link href="/Contact">Contact</Link>
