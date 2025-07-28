@@ -19,7 +19,7 @@ function PayPalButton() {
           layout: "vertical",
           color: "blue",
           shape: "pill",
-          label: "paypal",
+          label: "donate",
         }}
         forceReRender={["5.00"]}
         createOrder={(data, actions) => {
@@ -28,6 +28,7 @@ function PayPalButton() {
               {
                 amount: {
                   value: "5.00",
+                  description: "Support donation",
                 },
               },
             ],
@@ -43,7 +44,7 @@ function PayPalButton() {
 
       {paymentSuccess && (
         <p style={{ marginTop: "1rem", textAlign: "center", color: "green" }}>
-          ✅ Payment completed by {payerName}
+          Thank you, {payerName}, for your donation!
         </p>
       )}
     </div>

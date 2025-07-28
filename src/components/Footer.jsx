@@ -8,7 +8,7 @@ const Footer = () => {
         <span className="text-gray-300 hidden sm:inline">|</span>
         <a href="#" className="hover:underline">About</a>
         <span className="text-gray-300 hidden sm:inline">|</span>
-        <a href="#" className="hover:underline">Testimonials</a>
+        <a href="#" className="hover:underline">Donation</a>
         <span className="text-gray-300 hidden sm:inline">|</span>
         <a href="#" className="hover:underline">Contact</a>
         <span className="text-gray-300 hidden sm:inline">|</span>

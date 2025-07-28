@@ -16,11 +16,11 @@ export default function HamburgerComponent() {
             className="open-hamburger flex flex-col gap-10 items-center
             justify-center h-screen text-3xl text-center"
           >
-            <Link href="/Services">Services</Link>
-            <Link href="/Booking">Booking</Link>
-            <Link href="/About-me">About me</Link>
-            <Link href="/Testimonials">Testimonials</Link>
-            <Link href="/Contact">Contact</Link>
+            <Link href="/Services" onClick={() => setOpen(false)}>Services</Link>
+            <Link href="/Booking" onClick={() => setOpen(false)}>Booking</Link>
+            <Link href="/About-me" onClick={() => setOpen(false)}>About me</Link>
+            <Link href="/Donation" onClick={() => setOpen(false)}>Donation</Link>
+            <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link>
           </div>
         </div>
       )}
