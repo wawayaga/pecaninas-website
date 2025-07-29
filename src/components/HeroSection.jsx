@@ -1,6 +1,6 @@
 const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
   return (
-    <section className="bg-[#F6F6F6] pb-6 xl:pb-10">
+    <section className="bg-[#F6F6F6] mb-6 xl:mb-10">
       <div className="grid grid-rows-2 md:grid-cols-3 md:grid-rows-1 flex lg:flex-row flex-col">
         <div className="">
           <img
@@ -14,7 +14,7 @@ const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
             {title}
           </h1>
           <div className="xl:px-[10px] lg:ms-10 content-center">
-            <p className="text-sm text-left xl:text-right sm:text-base text-[#E8843A] mb-5">
+            <p className="text-left xl:text-right sm:text-base lg:text-xl text-[#E8843A] mb-5">
               {description}
             </p>
             <div className="flex flex-row gap-4 content-center justify-end">
