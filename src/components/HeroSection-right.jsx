@@ -10,11 +10,11 @@ const HeroSectionRight = ({ title, description, heroImage, alt }) => {
           />
         </div>
         <div className="flex flex-col justify-center w-full md:w-1/2 p-5 md:p-10">
-          <div className="text-right text-2xl sm:text-3xl md:text-4xl font-bold text-[#E8843A] mb-4">
+          <div className="text-right text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-[#E8843A] mb-4">
             <h1>{title}</h1>
           </div>
           <div>
-            <p className="text-sm sm:text-base text-[#E8843A] text-right">
+            <p className="text-base md:text-2xl text-[#E8843A] text-right">
               {description}
             </p>
           </div>

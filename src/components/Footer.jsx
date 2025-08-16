@@ -4,19 +4,19 @@ const Footer = () => {
       {/* Navigation */}
       <div className="flex flex-wrap justify-center gap-4 mb-6">
         <a href="#" className="hover:underline">
-          Booking
+          Reservas
         </a>
         <span className="text-gray-300 hidden sm:inline">|</span>
         <a href="#" className="hover:underline">
-          About
+          Sobre mí
         </a>
         <span className="text-gray-300 hidden sm:inline">|</span>
         <a href="#" className="hover:underline">
-          Donation
+          Donaciones
         </a>
         <span className="text-gray-300 hidden sm:inline">|</span>
         <a href="#" className="hover:underline">
-          Contact
+          Contacto
         </a>
         <span className="text-gray-300 hidden sm:inline">|</span>
       </div>
@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="w-8 h-0.5 bg-gray-200 mx-auto mb-4"></div>
 
       <div className="text-center space-y-1">
-        <p>© 2022 Pecanina. All rights reserved.</p>
+        <p>© 2025 Pecanina. All rights reserved.</p>
       </div>
     </footer>
   );

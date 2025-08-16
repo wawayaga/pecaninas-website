@@ -1,4 +1,5 @@
-const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
+import Button from "./Buttons.jsx"
+const HeroSection = ({ title, description, buttons, links, heroImage, alt }) => {
   return (
     <section className="bg-[#F6F6F6] mb-6 xl:mb-10">
       <div className="grid grid-rows-2 md:grid-cols-3 md:grid-rows-1 flex lg:flex-row flex-col">
@@ -6,7 +7,7 @@ const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
           <img
             src={heroImage}
             alt={alt}
-            className="opacity-75 shadow-md object-contain"
+            className="opacity-75 object-contain md:h-full lg:h-auto"
           />
         </div>
         <div className="grid grid-rows-2 md:col-span-2 p-5 md:p-10">
@@ -17,15 +18,8 @@ const HeroSection = ({ title, description, buttons, heroImage, alt }) => {
             <p className="text-left xl:text-right sm:text-base lg:text-xl text-[#E8843A] mb-5">
               {description}
             </p>
-            <div className="flex flex-row gap-4 content-center justify-end">
-              {buttons.map((btnText, index) => (
-                <button
-                  key={index}
-                  className="bg-[#224DBE] hover:bg-[#1464F6] w-1/2 md:w-1/4 text-white carlito-bold px-6 py-2 rounded-full"
-                >
-                  {btnText}
-                </button>
-              ))}
+            <div className="flex flex-row gap-4 content-center md:justify-end justify-center">
+              <Button buttons ={buttons} links = {links}/>
             </div>
           </div>
         </div>
