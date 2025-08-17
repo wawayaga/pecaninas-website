@@ -5,7 +5,7 @@ export default function Home() {
   const heroButtons = ["Servicios", "Contacto"];
   const links = ["/Services", "/Contact"];
   const h2Content = "Quién soy?"
-  const pContent = "Hola soy Ximena, también me puedes decir Peca! Soy licenciada enAgronomía y Educadora Canina. Vivo con Duna, gracias a ella me he profesionalizado como educadora canina y actualmente mi trabajo es acompañar al binomio tutor/a-perro/A y entregarles las herramientas para mejorar la relación, tales como comprender comunicación canina, información científica actualizada,y ética"
+  const pContent = "Hola soy Ximena, también me puedes decir Peca! Soy licenciada en Agronomía y Educadora Canina. Vivo con Duna, gracias a ella me he profesionalizado como educadora canina y actualmente mi trabajo es acompañar al binomio tutor/a-perro/A y entregarles las herramientas para mejorar la relación, tales como comprender comunicación canina, información científica actualizada,y ética"
 
   return (
     <div>
