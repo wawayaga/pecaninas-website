@@ -5,9 +5,8 @@ import Booking from "../pages/Booking";
 import AboutMe from "../pages/About-me";
 import NotFound from "../pages/Not-found";
 import Donation from "../pages/Donation";
-/*
 import Contact from "../pages/Contact";
-*/
+
 
 export default function Router() {
   return (
@@ -17,6 +16,7 @@ export default function Router() {
       <Route path="/About-me" component={AboutMe} />
       <Route path="/Donation" component={Donation} />
       <Route path="/Booking" component={Booking} />
+      <Route path="/Contact" component={Contact} />
 
       <Route>
         <NotFound />
